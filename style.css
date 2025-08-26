@@ -1,0 +1,117 @@
+/* Reset cơ bản */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.cv-container {
+  max-width: 800px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 3px solid #007acc;
+}
+
+.info h1 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.role {
+  font-weight: bold;
+  color: #007acc;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section h2 {
+  color: #007acc;
+  margin-bottom: 10px;
+  border-left: 4px solid #007acc;
+  padding-left: 8px;
+}
+
+.section ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.skills .skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills span {
+  background: #007acc;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.skills span:hover {
+  background: #005b99;
+}
+
+/* Nút về đầu trang */
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #007acc;
+  color: #fff;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  display: none;
+  transition: background 0.3s;
+}
+
+#topBtn:hover {
+  background: #005b99;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-pic {
+    margin-bottom: 10px;
+  }
+}
